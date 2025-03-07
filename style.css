@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: #33ff33;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33;
+}
+
+.typing {
+    display: inline-block;
+    border-right: 2px solid #33ff33;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+.videos {
+    margin-top: 20px;
+}
